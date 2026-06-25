@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   <!-- Отправка цели в Метрику родительской странице (Tilda) при клике на кнопку Telegram -->
   <script type="text/javascript">
     (function () {
-      var GOAL = 'tg_click'; // ВАЖНО: значение должно совпадать с идентификатором цели в Яндекс.Метрике
+      var GOAL = 'telegram_click'; // ВАЖНО: значение должно совпадать с идентификатором цели в Яндекс.Метрике
       document.addEventListener('click', function (ev) {
         var t = ev.target;
         var a = (t && t.closest) ? t.closest('a[href*="t.me/"], a.v2-cta, [data-goal]') : null;
